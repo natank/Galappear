@@ -47,6 +47,7 @@
   },
   "dependencies": {
     "jquery": "^3.4.1",
-    "materialize-css": "^1.0.0"
+    "materialize-css": "^1.0.0",
+    "waypoints": "^4.0.1"
   }
 }

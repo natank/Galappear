@@ -11,3 +11,11 @@ body {
   background: $primary-color;
   color: set-text-color($primary-color);
 }
+
+.animate-on-hide {
+  transition: visibility 1s ease-in;
+}
+
+.display-none {
+  display: none;
+}
