@@ -1,0 +1,13 @@
+.modal {
+  color: #333;
+  // Change the modal width to fit the image
+  @include atMedium {
+    width: 50%;
+  }
+  @include atLarge {
+    width: 38%;
+  }
+  @include atXlarge {
+    width: 26%;
+  }
+}

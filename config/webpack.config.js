@@ -8,10 +8,8 @@ module.exports = {
   mode: 'development',
   entry: {
     main: './app/assets/scripts/main.js',
-    posts: './app/assets/scripts/posts.js',
-    categories: './app/assets/scripts/categories.js',
-    comments: './app/assets/scripts/categories.js',
-    login: './app/assets/scripts/login.js'
+    logos: './app/assets/scripts/main.js',
+    gaming: './app/assets/scripts/main.js'
   },
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
@@ -86,55 +84,24 @@ module.exports = {
       templateParameters: {
         page: 'Home'
       },
-      chunks: ['main']
+      chunks: ['main'],
+      filename: 'index.html'
     }),
     new HtmlWebpackPlugin({
-      template: './app/posts.pug',
-      filename: 'posts.html',
+      template: './app/logos.pug',
       templateParameters: {
-        page: 'Posts'
+        page: 'Logos'
       },
-      chunks: ['posts']
+      chunks: ['main'],
+      filename: 'logos.html'
     }),
     new HtmlWebpackPlugin({
-      template: './app/users.pug',
-      filename: 'users.html',
+      template: './app/gaming.pug',
       templateParameters: {
-        page: 'Users'
+        page: 'Gaming'
       },
-      chunks: ['categories']
-    }),
-    new HtmlWebpackPlugin({
-      template: './app/comments.pug',
-      filename: 'comments.html',
-      templateParameters: {
-        page: 'Comments'
-      },
-      chunks: ['comments']
-    }),
-    new HtmlWebpackPlugin({
-      template: './app/login.pug',
-      filename: 'login.html',
-      templateParameters: {
-        page: 'Login'
-      },
-      chunks: ['login']
-    }),
-    new HtmlWebpackPlugin({
-      template: './app/categories.pug',
-      filename: 'categories.html',
-      templateParameters: {
-        page: 'Categories'
-      },
-      chunks: ['categories']
-    }),
-    new HtmlWebpackPlugin({
-      template: './app/details.pug',
-      filename: 'details.html',
-      templateParameters: {
-        page: 'Details'
-      },
-      chunks: ['posts']
+      chunks: ['main'],
+      filename: 'gaming.html'
     }),
     new BrowserSyncPlugin({
       // browse to http://localhost:3000/ during development,
