@@ -1,0 +1,6 @@
+.opacity-8 {
+  background-color: rgba(#bdbdbd, 0.2);
+}
+nav ul li.active {
+  @extend .darken-3, .opacity-8;
+}
