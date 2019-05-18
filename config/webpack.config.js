@@ -7,9 +7,7 @@ const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 module.exports = {
   mode: 'development',
   entry: {
-    main: './app/assets/scripts/main.js',
-    logos: './app/assets/scripts/main.js',
-    gaming: './app/assets/scripts/main.js'
+    main: './app/assets/scripts/main.js'
   },
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
